@@ -56,11 +56,11 @@ jobs:
           make psnes.nro
           mv src/cores/psnes/psnes.nro $GITHUB_WORKSPACE
 
-      - name: Build pgba
-        run: |
-          cd $GITHUB_WORKSPACE/cmake-build
-          make pgba.nro
-          mv src/cores/psnes/pgba.nro $GITHUB_WORKSPACE
+      #- name: Build pgba
+      #  run: |
+      #    cd $GITHUB_WORKSPACE/cmake-build
+      #    make pgba.nro
+      #    mv src/cores/psnes/pgba.nro $GITHUB_WORKSPACE
 
       - name: Release
         uses: softprops/action-gh-release@v1
